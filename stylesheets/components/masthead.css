@@ -2,10 +2,10 @@
 .masthead {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    
     grid-template-areas:
         "menu-and-search . actions-buttons"
-        ". little-technologies ."
+        "little-technologies little-technologies little-technologies"
         "date logo todays-paper";
 
 }
@@ -33,21 +33,61 @@
 }
 
 .masthead_actions div {
-    padding: 3px 3px;
+    padding: 10px 10px;
 }
 
 .masthead_technologies {
     grid-area: little-technologies;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 10px;
+    color:#6f6f6f;
+    /* margin: 0px auto; */
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom: solid #e2e2e2;
+    padding-top: 10px
+    
+   
+}
+.masthead_technologies div{
+    border-top: solid #e2e2e2;
+    border-right: solid #e2e2e2;
+    border-left: solid #e2e2e2;
+    position: relative;
+    top: 1px;
+    background-color: white;
+}
+.masthead_technologies span{
+    margin: 5px;
+    padding-bottom: 11px;
+    
 }
 
 .masthead_date {
     grid-area: date;
+    display: flex;
+    align-items: flex-end;
+    font-size: 11px;
+    padding-bottom: 11px;
+    border-bottom: solid #e2e2e2;
 }
 
 .masthead_logo{
-    grid-area: logo
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 11px;
+    border-bottom: solid #e2e2e2;
 }
 
 .masthead_paper{
     grid-area: todays-paper;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 11px;
+    padding-bottom: 11px;
+    border-bottom: solid #e2e2e2;
 }
