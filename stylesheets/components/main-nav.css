@@ -1,1 +1,11 @@
 /* Your code here */
+ul {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    margin: 5px;
+}
