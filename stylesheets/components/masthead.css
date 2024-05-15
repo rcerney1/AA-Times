@@ -3,19 +3,37 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
         "menu-and-search . actions-buttons"
         ". little-technologies ."
         "date logo todays-paper";
-    
+
 }
 
 .masthead_menu-and-search {
     grid-area: menu-and-search;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
 }
 
-.masthead_actions{
+.masthead_menu-and-search div {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+.masthead_menu-and-search div:hover {
+    background-color: #f7f7f5;
+}
+
+.masthead_actions {
     grid-area: actions-buttons;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.masthead_actions div {
+    padding: 3px 3px;
 }
 
 .masthead_technologies {
