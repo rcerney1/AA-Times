@@ -1,1 +1,35 @@
 /* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "menu-and-search . actions-buttons"
+        ". little-technologies ."
+        "date logo todays-paper";
+    
+}
+
+.masthead_menu-and-search {
+    grid-area: menu-and-search;
+}
+
+.masthead_actions{
+    grid-area: actions-buttons;
+}
+
+.masthead_technologies {
+    grid-area: little-technologies;
+}
+
+.masthead_date {
+    grid-area: date;
+}
+
+.masthead_logo{
+    grid-area: logo
+}
+
+.masthead_paper{
+    grid-area: todays-paper;
+}
